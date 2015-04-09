@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Angular chatroom
 
 ## How to use
@@ -27,3 +28,7 @@ Now open up your browser and point it to http://localhost:8090 .
 	* To send a private message, a username must be chosen on the right in the userlist
 	* a user cannot send another user a private message unless they share a room
 - For the rooms to update the user has to click on some room in the room list.
+=======
+# angular-chatroom
+Chatroom created in Angular
+>>>>>>> 92ed0c049b9ff956b3079b5f226d765aa8470539
