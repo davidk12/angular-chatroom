@@ -1,0 +1,80 @@
+
+
+<link href="../Stylesheets/chat.css" rel="stylesheet" type="text/css"/>
+
+<!--/////////////////////////////////////////////////////////////////////-->
+<div id = "id_left_content">
+	<div id = "id_left_content_top">
+		<span>Woom Info</span>
+			<table>
+				<tr>
+					<td>Room:</td>
+					<td>{{roomName}}</td>
+				</tr>
+				<tr>
+					<td>Topic:</td>
+					<td>{{currentRoom.topic}}</td>
+				</tr>
+			</table>
+	</div>
+
+	<div id = "id_left_content_middle">
+		<span>Woom contwol</span>
+		<input ng-model="roomNameInput" placeholder="Insewt woom heeyah">
+		<button ng-click="create()">Cweate/Jwoin!</button>
+	</div>
+	<div id = "id_left_content_bottom">
+		<span>Available wooms</span>
+		<ol>
+			    <li ng-click = "updateRooms()" ng-repeat = "name in roomNames">{{name}}</li>
+			</ol>
+	</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////-->
+
+<div id = "id_middle_content">
+	<div id = "id_middle_content_top">
+		<span>Mai sp33ks</span>
+		<div id ="id_chatwindow" scroll-glue ng-model="glued">
+			<table id ="id_chat_table">
+			<tr ng-repeat = "message in roomMessages">
+			<td>{{message.timestamp}}</td> 
+			  <td>{{message.nick}}</td>
+			  <td>{{message.message}}</td>
+			</tr>
+			</table>
+		</div>
+		<input  ng-model = "currentMessage" placeholder="Put ur comment heeyah">
+		<button ng-click="send()">Comment!</button>
+	</div>
+	<div id = "id_middle_content_bottom">
+		<span>Pwivate Puws</span>
+		<div id ="id_private_messagebox">
+			<table >
+				<tr ng-repeat = "message in privateMesages">
+				  <td>{{message.nick}}</td>
+				  <td>{{message.mess}}</td>
+				</tr>
+			</table>
+			
+		</div>
+
+		<input  readonly value="{{ selectedUser }}">
+		<input ng-model ="currentPrivateMess" placeholder="Put ur message heeyah">
+		<button ng-click="privatesend()">Send!</button>
+	</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////-->
+<div id = "id_right_content">
+	<div id ="id_right_content_top">
+		<span>Me :D</span>
+		<div id ="id_profile_pic_div"><img src="Media/images/nyan.gif" alt=""/></div>
+		<div id ="id_username_div"><p>{{username}}</p></div>
+		<button ng-click="disconnect()">Sign out :(</button>
+	</div>
+	<div id ="id_right_content_bottom" >
+		<span>Usews in woom</span>
+		<p ng-click = "setuser(user)" ng-repeat = "user in users">{{user}}</p>
+	</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////-->

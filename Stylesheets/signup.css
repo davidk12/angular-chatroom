@@ -1,0 +1,75 @@
+
+
+#id_signup_container
+{
+	width:100%;
+	height:100%;
+	
+}
+
+	
+
+	#id_signup_box
+	{
+		width:20%;
+		height:20%;
+		background-color:purple;
+		margin-left: 40%;
+		margin-top: 15%;
+		float:left;
+		border:3px solid purple;
+		border-radius: 20px;
+		overflow: hidden;
+
+
+	}
+		#id_signup_container div span
+		{
+			height:20%;
+			width:100%;
+			text-align: center;
+			font-family: logofont;
+			color:white;
+			background-color: #9900FF;
+			display:block;
+		}
+
+		#id_signup_container div input
+		{
+		
+			height:40%;
+			width:100%;
+			font-family: logofont;
+			padding-left: 5%;
+		}
+
+		#id_signup_container div button
+		{
+
+			height:40%;
+			width:100%;
+			cursor: pointer;
+			font-family: logofont;
+
+		}
+
+
+#id_signup_message_div
+{
+	height:20%;
+	width:30%;
+	margin-top: 1%;
+	background-color:#9900FF;
+	margin-left: 35%;
+	float:left;
+	border:3px solid purple;
+	border-radius: 20px;
+	font-family: logofont;
+	display:none;
+}
+
+#id_signup_message_div p
+{
+	color:white;
+	padding:2%;
+}

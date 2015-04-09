@@ -1,0 +1,36 @@
+<html ng-app="ChatApp">
+	<head>
+
+		<!-- STYLESHEETS -->
+		<link href="Stylesheets/global.css" rel="stylesheet" type="text/css">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="https://rawgithub.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script>
+		<script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.min.js"></script>
+		<script src="build/chatapp.min.js"></script>
+	</head>
+	<body>
+	<!--================================================================================-->
+		<!-- HEADER BEGINS-->
+		<div id ="id_site_header">
+			<div id = "id_site_logo"> <img src="Media/images/logo.png" alt=""/> </div>	
+			<div id = "id_site_title"> <h1> MEOWSP33K ;) </h1> </div>
+		</div>
+		<!-- HEADER ENDS -->	
+	<!--================================================================================-->
+
+	
+	<div ng-view id ="id_template_container"></div>
+
+	<!--================================================================================-->
+		<!-- FOOTER BEGINS-->
+		<div id = "id_site_footer"></div>
+		<!-- FOOTER ENDS-->
+	<!--================================================================================-->
+	
+	</body>
+
+
+
+</html>
